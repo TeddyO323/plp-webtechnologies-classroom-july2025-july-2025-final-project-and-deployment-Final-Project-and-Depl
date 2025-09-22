@@ -1,8 +1,3 @@
-Got it ✅ Let’s create a **README.md** file for your Creative Agency website project. This will serve as the documentation to explain what the project is, how to run it, and its structure.
-
-Here’s a draft you can use (and we’ll refine if needed):
-
----
 
 # Creative Agency Website
 
