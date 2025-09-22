@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency | About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .nav-link:hover {
+            color: #a5b4fc;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-300">Creative</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link hover:text-indigo-300">Home</a>
+                <a href="about.html" class="nav-link text-indigo-300">About</a>
+                <a href="contact.html" class="nav-link hover:text-indigo-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 py-3">
+            <a href="index.html" class="block py-2 hover:text-indigo-300">Home</a>
+            <a href="about.html" class="block py-2 text-indigo-300">About</a>
+            <a href="contact.html" class="block py-2 hover:text-indigo-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Story</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Learn about our journey, values, and the team behind our success.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6">Who We Are</h2>
+                    <p class="text-gray-600 mb-4">Founded in 2015, Creative Agency started as a small team of passionate designers and developers with a shared vision to create exceptional digital experiences.</p>
+                    <p class="text-gray-600 mb-4">Today, we've grown into a full-service digital agency with clients across multiple industries, but we've never lost sight of our core values: creativity, quality, and client satisfaction.</p>
+                    <p class="text-gray-600">Our team of 50+ professionals brings diverse skills and perspectives to every project, ensuring we deliver solutions that are both beautiful and effective.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="http://static.photos/office/640x360/1" alt="Our Team" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-indigo-500 mb-4">
+                        <i data-feather="star" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Excellence</h3>
+                    <p class="text-gray-600">We pursue perfection in every detail, delivering work that exceeds expectations.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-indigo-500 mb-4">
+                        <i data-feather="users" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaboration</h3>
+                    <p class="text-gray-600">We believe the best results come from teamwork, both within our team and with our clients.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-indigo-500 mb-4">
+                        <i data-feather="refresh-cw" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovation</h3>
+                    <p class="text-gray-600">We constantly explore new ideas and technologies to stay ahead of the curve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Our Journey</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative timeline-item pl-16 pb-12" data-aos="fade-up">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-500 text-white">
+                        <i data-feather="flag" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Founded</h3>
+                    <p class="text-gray-500 mb-2">2015</p>
+                    <p class="text-gray-600">Creative Agency was founded by three friends with a shared passion for design and technology.</p>
+                </div>
+                <div class="relative timeline-item pl-16 pb-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-500 text-white">
+                        <i data-feather="award" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">First Major Client</h3>
+                    <p class="text-gray-500 mb-2">2017</p>
+                    <p class="text-gray-600">We landed our first Fortune 500 client, marking our transition to a full-service agency.</p>
+                </div>
+                <div class="relative timeline-item pl-16 pb-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-500 text-white">
+                        <i data-feather="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">New Headquarters</h3>
+                    <p class="text-gray-500 mb-2">2019</p>
+                    <p class="text-gray-600">Moved into our custom-designed office space to accommodate our growing team.</p>
+                </div>
+                <div class="relative timeline-item pl-16" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-500 text-white">
+                        <i data-feather="globe" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Global Expansion</h3>
+                    <p class="text-gray-500 mb-2">2022</p>
+                    <p class="text-gray-600">Opened our first international office, serving clients across three continents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Meet The Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/people/200x200/3" alt="Alex Johnson" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Alex Johnson</h3>
+                    <p class="text-indigo-300 mb-4">CEO & Founder</p>
+                    <p class="text-gray-400">Visionary leader with 15+ years in digital strategy and design.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/people/200x200/4" alt="Maria Garcia" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Maria Garcia</h3>
+                    <p class="text-indigo-300 mb-4">Creative Director</p>
+                    <p class="text-gray-400">Award-winning designer with a passion for user experience.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/people/200x200/5" alt="James Wilson" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">James Wilson</h3>
+                    <p class="text-indigo-300 mb-4">CTO</p>
+                    <p class="text-gray-400">Technology expert specializing in scalable web architectures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-indigo-600 text-white">
+        <div class="container mx-auto text-center px-6" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-6">Want to Join Our Team?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">We're always looking for talented individuals to join our growing team.</p>
+            <a href="contact.html" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-indigo-100 transition duration-300 inline-block">View Openings</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-indigo-300">Creative</h3>
+                    <p class="text-gray-400">Transforming ideas into digital reality with passion and precision.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-indigo-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-indigo-300">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-indigo-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-300">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-300">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-300">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-indigo-300"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-300"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-300"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-300"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Creative Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
